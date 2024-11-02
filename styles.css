@@ -1,0 +1,220 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Keep the previous background color */
+    color: #333;
+    display: flex;           /* Allow flexbox layout */
+    flex-direction: column;  /* Arrange children in a column */
+    min-height: 100vh;      /* Make body at least full viewport height */
+}
+
+/* Navbar Styles */
+nav {
+    background-color: #05305f;
+    padding: 12px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #62aa62; /* Keep original hover color */
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('background-image.jpg') center/cover; /* Background gradient and image */
+    height: 90vh; /* Full height */
+    display: flex;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+    color: #fff;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin: 0 0 10px;
+}
+
+.hero h3 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Projects Section */
+.projects {
+    padding: 20px 0; /* Add some padding */
+}
+
+.projects ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove default padding */
+}
+
+.projects li {
+    margin-bottom: 20px; /* Space between cards */
+}
+
+.projects .blog-entry {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out; /* Add transition for hover effect */
+}
+
+.projects .blog-entry:hover {
+    transform: translateY(-5px); /* Slightly lift card on hover */
+}
+
+.projects .blog-entry .block-20 {
+    display: block;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+}
+
+.projects .blog-entry .text {
+    padding: 20px;
+    text-align: center;
+}
+
+.projects .blog-entry .heading {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.projects .blog-entry .heading a {
+    color: #333;
+    text-decoration: none;
+}
+
+.projects .blog-entry .heading a:hover {
+    text-decoration: underline;
+}
+
+/* Card Structure */
+.card {
+    border: none; /* Remove border */
+}
+
+.card img {
+    max-width: 100%; /* Ensure image fits the card */
+    height: auto; /* Maintain aspect ratio */
+}
+
+/* Contact Section */
+.contact {
+    background-color: #ffffff; /* White background for contrast */
+    padding: 60px 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px; /* Increase font size for better readability */
+    margin-bottom: 40px; /* Space below paragraph */
+}
+
+/* Contact Cards */
+.contact-card {
+    background-color: #f9f9f9; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 30px;
+    margin: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s; /* Animation for hover effect */
+}
+
+.contact-card:hover {
+    transform: translateY(-5px); /* Lift card on hover */
+}
+
+.contact-card i {
+    color: #05305f; /* Icon color */
+}
+
+.contact-link {
+    color: #05305f; /* Link color */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-link:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Button Styles */
+.btn-custom {
+    background-color: #62aa62; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 12px 25px; /* Button padding */
+    border-radius: 50px; /* Rounded corners */
+    font-size: 1.2rem; /* Button font size */
+    text-align: center;
+    align-items: center;
+    transition: all 0.3s ease; /* Smooth transition */
+    text-transform: uppercase; /* Uppercase text */
+}
+
+.btn-custom:hover {
+    background-color: #4d8c4d; /* Button hover color */
+    color: #fff; /* Button hover text color */
+    text-align: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Button shadow on hover */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #05305f; /* Updated color */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    margin-top: auto; /* Push footer to the bottom */
+}
